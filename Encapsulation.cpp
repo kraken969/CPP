@@ -1,16 +1,18 @@
 // Encapsulation In C++
 
 #include <iostream>
-#include <string>
+#include <string> 
 using namespace std;
 
+// Declare Class Function
 class Employee{
-private:
+private: // private modifier
     string Name;
     int Age;
     string Skill;
 
-public:
+public: // public modifier 
+/* Setter and Getter */
     void setName(string name){
         Name = name;
     }
@@ -30,6 +32,7 @@ public:
         return Skill;
     }
 
+// Funtion to display attributes
 void show(){
     cout << endl;
     cout << "The new client is " << Name << endl;
@@ -37,6 +40,7 @@ void show(){
     cout << "His/Her positions is " << Skill << "\n" << endl;
     }
 
+// Funtion to declare varibles private to public 
 Employee(string name, int age, string skill){
     Name = name;
     Age = age;
@@ -44,6 +48,7 @@ Employee(string name, int age, string skill){
     }
 };
 
+// Main Function
 int main(){
     Employee hh = Employee ("Kraken", 20, "HR");
     hh.show();
