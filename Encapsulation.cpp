@@ -12,7 +12,7 @@ private: // private modifier
     string Skill;
 
 public: // public modifier 
-/* Setter and Getter */
+// Setter and Getter Functions
     void setName(string name){
         Name = name;
     }
